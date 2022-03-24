@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="static/bootstrap.min.css" rel="stylesheet">
+  <link href="static/styles.css" rel="stylesheet">
+
+  <!-- Bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <link href="/img/icon/cat.png" rel="icon">
+
+  <title>
+    Oyasumi Punpun
+  </title>
+</head>
+<body>
+  <main>
+    <div class="container-fluid">
+      <div class="row" style="margin-top: 0.25rem; margin-bottom: 0.25rem">
+        <div class="col-lg-2 pb-3" style="height: 163.375px" id="sidebar">
+          <h6>Oyasumi Punpun</h6>
+          <hr>
+          <h6><small><a class="text-muted sidebar" href="page1.html">3-gatsu no Lion</a></small></h6>
+          <h6><small><a class="text-muted sidebar" href="page2.html">Gin no Saji</a></small></h6>
+          <h6><small><a class="text-muted sidebar" href="page3.html">NHK ni youkoso</a></small></h6>
+          <h6><small><a class="text-muted sidebar" href="index.html">Home</a></small></h6>
+        </div>
+
+        <script>
+          function screenResize(){
+            let width = window.screen.width;
+            let nav = document.getElementById('sidebar');
+            if (width < 1000)
+            {
+              nav.classList.remove('sticky-top');
+              nav.style.marginBottom = "0.5rem";
+              nav.style.paddingTop = "0rem";
+
+              nav.style.width = "100vw";
+
+              window.onscroll = () => {};
+            }
+            else
+            {
+              nav.classList.add('sticky-top');
+              nav.style.marginBottom = "0rem";
+              nav.style.paddingTop = "29.6vh";
+
+              nav.style.width = "16.67vw";
+
+              window.onscroll = () => {
+                if (this.scrollY > 0 || document.documentElement.scrollTop > 0) 
+                {
+                  nav.style.paddingTop = "30.2vh";
+                }
+                else 
+                {
+                  nav.style.paddingTop = "29.6vh";
+                }
+              };
+            }
+          }
+          screenResize();
+
+          window.addEventListener('resize', function(){
+            screenResize();
+          });
+        </script>
+
+        <div class="col-lg-9 text-muted p-3" style="text-align: justify">
+          
+          <div class="sticky-top sticky-breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a style="color: white">Oyasumi Punpun</a></li>
+              <li class="breadcrumb-item active">Inio Asano</li>
+            </ol>
+          </div>
+
+          <img src="img/page4/002.jpg" class="rounded img-fluid float-start me-3 mb-3" alt="Oyasumi Punpun: Volume 1">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas ut lectus sit amet dictum. Aliquam posuere ut ligula in auctor. Phasellus pellentesque tempor lacus, ac eleifend erat aliquet id. Nullam congue felis sed mi molestie cursus. Ut sed vehicula nulla, ac maximus tellus. Aenean luctus mattis fringilla. Phasellus in orci sed ligula elementum interdum. Suspendisse ipsum mi, porta non diam ac, tincidunt commodo est. Fusce congue nec felis ut condimentum. Morbi consequat dolor in felis suscipit, vitae pharetra quam porta.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas ut lectus sit amet dictum. Aliquam posuere ut ligula in auctor. Phasellus pellentesque tempor lacus, ac eleifend erat aliquet id. Nullam congue felis sed mi molestie cursus. Ut sed vehicula nulla, ac maximus tellus. Aenean luctus mattis fringilla. Phasellus in orci sed ligula elementum interdum. Suspendisse ipsum mi, porta non diam ac, tincidunt commodo est. Fusce congue nec felis ut condimentum. Morbi consequat dolor in felis suscipit, vitae pharetra quam porta.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas ut lectus sit amet dictum. Aliquam posuere ut ligula in auctor. Phasellus pellentesque tempor lacus, ac eleifend erat aliquet id. Nullam congue felis sed mi molestie cursus. Ut sed vehicula nulla, ac maximus tellus. Aenean luctus mattis fringilla. Phasellus in orci sed ligula elementum interdum. Suspendisse ipsum mi, porta non diam ac, tincidunt commodo est. Fusce congue nec felis ut condimentum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas ut lectus sit amet dictum. Aliquam posuere ut ligula in auctor. Phasellus pellentesque tempor lacus, ac eleifend erat aliquet id. Nullam congue felis sed mi molestie cursus. Ut sed vehicula nulla, ac maximus tellus. Aenean luctus mattis fringilla. Phasellus in orci sed ligula elementum interdum. Suspendisse ipsum mi, porta non diam ac, tincidunt commodo est. Fusce congue nec felis ut condimentum. Morbi consequat dolor in felis suscipit, vitae pharetra quam porta.</p>
+          <hr class="divider mb-3 mt-5">
+          <img src="img/page4/006.jpg" class="rounded img-fluid float-start me-3 mb-3" alt="Oyasumi Punpun: Volume 6">
+          <img src="img/page4/004.jpg" class="rounded img-fluid float-start me-3 mb-3" alt="Oyasumi Punpun: Volume 4">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas ut lectus sit amet dictum. Aliquam posuere ut ligula in auctor. Phasellus pellentesque tempor lacus, ac eleifend erat aliquet id. Nullam congue felis sed mi molestie cursus. Ut sed vehicula nulla, ac maximus tellus. Aenean luctus mattis fringilla. Phasellus in orci sed ligula elementum interdum. Suspendisse ipsum mi, porta non diam ac, tincidunt commodo est. Fusce congue nec felis ut condimentum. Morbi consequat dolor in felis suscipit, vitae pharetra quam porta.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas ut lectus sit amet dictum. Aliquam posuere ut ligula in auctor. Phasellus pellentesque tempor lacus, ac eleifend erat aliquet id. Nullam congue felis sed mi molestie cursus. Ut sed vehicula nulla, ac maximus tellus. Aenean luctus mattis fringilla. Phasellus in orci sed ligula elementum interdum. Suspendisse ipsum mi, porta non diam ac, tincidunt commodo est. Fusce congue nec felis ut condimentum. Morbi consequat dolor in felis suscipit, vitae pharetra quam porta.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas ut lectus sit amet dictum. Aliquam posuere ut ligula in auctor. Phasellus pellentesque tempor lacus, ac eleifend erat aliquet id. Nullam congue felis sed mi molestie cursus. Ut sed vehicula nulla, ac maximus tellus. Aenean luctus mattis fringilla. Phasellus in orci sed ligula elementum interdum. Suspendisse ipsum mi, porta non diam ac, tincidunt commodo est. Fusce congue nec felis ut condimentum. Morbi consequat dolor in felis suscipit, vitae pharetra quam porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas ut lectus sit amet dictum.</p>
+          <hr class="divider mb-3 mt-5">
+          <img src="img/page4/003.jpg" class="rounded img-fluid float-start me-3 mb-3" alt="Oyasumi Punpun: Volume 3">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas ut lectus sit amet dictum. Aliquam posuere ut ligula in auctor. Phasellus pellentesque tempor lacus, ac eleifend erat aliquet id. Nullam congue felis sed mi molestie cursus. Ut sed vehicula nulla, ac maximus tellus. Aenean luctus mattis fringilla. Phasellus in orci sed ligula elementum interdum. Suspendisse ipsum mi, porta non diam ac, tincidunt commodo est. Fusce congue nec felis ut condimentum. Morbi consequat dolor in felis suscipit, vitae pharetra quam porta.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas ut lectus sit amet dictum. Aliquam posuere ut ligula in auctor. Phasellus pellentesque tempor lacus, ac eleifend erat aliquet id. Nullam congue felis sed mi molestie cursus. Ut sed vehicula nulla, ac maximus tellus. Aenean luctus mattis fringilla. Phasellus in orci sed ligula elementum interdum. Suspendisse ipsum mi, porta non diam ac, tincidunt commodo est. Fusce congue nec felis ut condimentum. Morbi consequat dolor in felis suscipit, vitae pharetra quam porta.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas ut lectus sit amet dictum. Aliquam posuere ut ligula in auctor. Phasellus pellentesque tempor lacus, ac eleifend erat aliquet id. Nullam congue felis sed mi molestie cursus. Ut sed vehicula nulla, ac maximus tellus. Aenean luctus mattis fringilla. Phasellus in orci sed ligula elementum interdum. Suspendisse ipsum mi, porta non diam ac, tincidunt commodo est. Fusce congue nec felis ut condimentum. Morbi consequat dolor in felis suscipit, vitae pharetra quam porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas ut lectus sit amet dictum.</p>
+          <hr class="divider mb-3 mt-5">
+          <img src="img/page4/010.jpg" class="rounded img-fluid float-start me-3 mb-3" alt="Oyasumi Punpun: Volume 10">
+          <img src="img/page4/012.jpg" class="rounded img-fluid float-start me-3 mb-3" alt="Oyasumi Punpun: Volume 12">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas ut lectus sit amet dictum. Aliquam posuere ut ligula in auctor. Phasellus pellentesque tempor lacus, ac eleifend erat aliquet id. Nullam congue felis sed mi molestie cursus. Ut sed vehicula nulla, ac maximus tellus. Aenean luctus mattis fringilla. Phasellus in orci sed ligula elementum interdum. Suspendisse ipsum mi, porta non diam ac, tincidunt commodo est. Fusce congue nec felis ut condimentum. Morbi consequat dolor in felis suscipit, vitae pharetra quam porta.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas ut lectus sit amet dictum. Aliquam posuere ut ligula in auctor. Phasellus pellentesque tempor lacus, ac eleifend erat aliquet id. Nullam congue felis sed mi molestie cursus. Ut sed vehicula nulla, ac maximus tellus. Aenean luctus mattis fringilla. Phasellus in orci sed ligula elementum interdum. Suspendisse ipsum mi, porta non diam ac, tincidunt commodo est. Fusce congue nec felis ut condimentum. Morbi consequat dolor in felis suscipit, vitae pharetra quam porta.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas ut lectus sit amet dictum. Aliquam posuere ut ligula in auctor. Phasellus pellentesque tempor lacus, ac eleifend erat aliquet id. Nullam congue felis sed mi molestie cursus. Ut sed vehicula nulla, ac maximus tellus. Aenean luctus mattis fringilla. Phasellus in orci sed ligula elementum interdum. Suspendisse ipsum mi, porta non diam ac, tincidunt commodo est. Fusce congue nec felis ut condimentum. Morbi consequat dolor in felis suscipit, vitae pharetra quam porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas ut lectus sit amet dictum.</p>
+          <hr class="divider mt-5">
+          <hr class="divider mb-3">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas ut lectus sit amet dictum. Aliquam posuere ut ligula in auctor. Phasellus pellentesque tempor lacus, ac eleifend erat aliquet id. Nullam congue felis sed mi molestie cursus. Ut sed vehicula nulla, ac maximus tellus. Aenean luctus mattis fringilla. Phasellus in orci sed ligula elementum interdum. Suspendisse ipsum mi, porta non diam ac, tincidunt commodo est. Fusce congue nec felis ut condimentum. Morbi consequat dolor in felis suscipit, vitae pharetra quam porta.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas ut lectus sit amet dictum. Aliquam posuere ut ligula in auctor. Phasellus pellentesque tempor lacus, ac eleifend erat aliquet id. Nullam congue felis sed mi molestie cursus. Ut sed vehicula nulla, ac maximus tellus. Aenean luctus mattis fringilla. Phasellus in orci sed ligula elementum interdum. Suspendisse ipsum mi, porta non diam ac, tincidunt commodo est. Fusce congue nec felis ut condimentum. Morbi consequat dolor in felis suscipit, vitae pharetra quam porta.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas ut lectus sit amet dictum. Aliquam posuere ut ligula in auctor. Phasellus pellentesque tempor lacus, ac eleifend erat aliquet id. Nullam congue felis sed mi molestie cursus. Ut sed vehicula nulla, ac maximus tellus. Aenean luctus mattis fringilla. Phasellus in orci sed ligula elementum interdum. Suspendisse ipsum mi, porta non diam ac, tincidunt commodo est. Fusce congue nec felis ut condimentum. Morbi consequat dolor in felis suscipit, vitae pharetra quam porta.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas ut lectus sit amet dictum. Aliquam posuere ut ligula in auctor. Phasellus pellentesque tempor lacus, ac eleifend erat aliquet id. Nullam congue felis sed mi molestie cursus. Ut sed vehicula nulla, ac maximus tellus. Aenean luctus mattis fringilla. Phasellus in orci sed ligula elementum interdum. Suspendisse ipsum mi, porta non diam ac, tincidunt commodo est. Fusce congue nec felis ut condimentum. Morbi consequat dolor in felis suscipit, vitae pharetra quam porta.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas ut lectus sit amet dictum. Aliquam posuere ut ligula in auctor. Phasellus pellentesque tempor lacus, ac eleifend erat aliquet id. Nullam congue felis sed mi molestie cursus. Ut sed vehicula nulla, ac maximus tellus. Aenean luctus mattis fringilla. Phasellus in orci sed ligula elementum interdum. Suspendisse ipsum mi, porta non diam ac, tincidunt commodo est. Fusce congue nec felis ut condimentum. Morbi consequat dolor in felis suscipit, vitae pharetra quam porta.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas ut lectus sit amet dictum. Aliquam posuere ut ligula in auctor. Phasellus pellentesque tempor lacus, ac eleifend erat aliquet id. Nullam congue felis sed mi molestie cursus. Ut sed vehicula nulla, ac maximus tellus. Aenean luctus mattis fringilla. Phasellus in orci sed ligula elementum interdum. Suspendisse ipsum mi, porta non diam ac, tincidunt commodo est. Fusce congue nec felis ut condimentum. Morbi consequat dolor in felis suscipit, vitae pharetra quam porta.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas ut lectus sit amet dictum. Aliquam posuere ut ligula in auctor. Phasellus pellentesque tempor lacus, ac eleifend erat aliquet id. Nullam congue felis sed mi molestie cursus. Ut sed vehicula nulla, ac maximus tellus. Aenean luctus mattis fringilla. Phasellus in orci sed ligula elementum interdum. Suspendisse ipsum mi, porta non diam ac, tincidunt commodo est. Fusce congue nec felis ut condimentum. Morbi consequat dolor in felis suscipit, vitae pharetra quam porta.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas ut lectus sit amet dictum. Aliquam posuere ut ligula in auctor. Phasellus pellentesque tempor lacus, ac eleifend erat aliquet id. Nullam congue felis sed mi molestie cursus. Ut sed vehicula nulla, ac maximus tellus. Aenean luctus mattis fringilla. Phasellus in orci sed ligula elementum interdum. Suspendisse ipsum mi, porta non diam ac, tincidunt commodo est. Fusce congue nec felis ut condimentum. Morbi consequat dolor in felis suscipit, vitae pharetra quam porta.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas ut lectus sit amet dictum. Aliquam posuere ut ligula in auctor. Phasellus pellentesque tempor lacus, ac eleifend erat aliquet id. Nullam congue felis sed mi molestie cursus. Ut sed vehicula nulla, ac maximus tellus. Aenean luctus mattis fringilla. Phasellus in orci sed ligula elementum interdum. Suspendisse ipsum mi, porta non diam ac, tincidunt commodo est. Fusce congue nec felis ut condimentum. Morbi consequat dolor in felis suscipit, vitae pharetra quam porta.</p>
+          <hr class="divider mt-5">
+          <hr class="divider mb-3">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas ut lectus sit amet dictum. Aliquam posuere ut ligula in auctor. Phasellus pellentesque tempor lacus, ac eleifend erat aliquet id. Nullam congue felis sed mi molestie cursus. Ut sed vehicula nulla, ac maximus tellus. Aenean luctus mattis fringilla. Phasellus in orci sed ligula elementum interdum. Suspendisse ipsum mi, porta non diam ac, tincidunt commodo est. Fusce congue nec felis ut condimentum. Morbi consequat dolor in felis suscipit, vitae pharetra quam porta.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas ut lectus sit amet dictum. Aliquam posuere ut ligula in auctor. Phasellus pellentesque tempor lacus, ac eleifend erat aliquet id. Nullam congue felis sed mi molestie cursus. Ut sed vehicula nulla, ac maximus tellus. Aenean luctus mattis fringilla. Phasellus in orci sed ligula elementum interdum. Suspendisse ipsum mi, porta non diam ac, tincidunt commodo est. Fusce congue nec felis ut condimentum. Morbi consequat dolor in felis suscipit, vitae pharetra quam porta.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas ut lectus sit amet dictum. Aliquam posuere ut ligula in auctor. Phasellus pellentesque tempor lacus, ac eleifend erat aliquet id. Nullam congue felis sed mi molestie cursus. Ut sed vehicula nulla, ac maximus tellus. Aenean luctus mattis fringilla. Phasellus in orci sed ligula elementum interdum. Suspendisse ipsum mi, porta non diam ac, tincidunt commodo est. Fusce congue nec felis ut condimentum. Morbi consequat dolor in felis suscipit, vitae pharetra quam porta.</p>
+        
+        </div>
+        <div class="col-lg-1"></div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <h3 class="h3-about">seyLu</h3>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor03">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="page1.html">3-gatsu no Lion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="page2.html">Gin no Saji</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="page3.html">NHK ni youkoso</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active">Oyasumi Punpun
+                <span class="visually-hidden">(current)</span>
+              </a>
+            </li>
+          </ul>
+          <div class="d-inline-block">
+            <h4 class="h4-about">homepage</h4>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </footer>
+</body>
+</html>
