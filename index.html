@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,22 +11,103 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
     <style>
-        *, *::before, *::after {
-            box-sizing: border-box;
-            font-size: 16px;
-            margin: 0;
-            padding: 0;
-            font-weight: 400;
-        }
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
 
-        body {
-            text-align: center;
-        }
+    * {
+        margin: 0;
+    }
+
+    html,
+    body {
+        height: 100%;
+        font-family: "JetBrains Mono", monospace;
+    }
+
+    body {
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    img,
+    picture,
+    video,
+    canvas,
+    svg {
+        display: block;
+        max-width: 100%;
+    }
+
+    input,
+    button,
+    textarea,
+    select {
+        font: inherit;
+    }
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        overflow-wrap: break-word;
+    }
+
+    :root {
+        --color-white: hsl(0deg, 0%, 100%);
+        --color-black: hsl(210deg, 30%, 8%);
+        --color-primary: hsl(230deg, 100%, 69%);
+    }
+
+    .container {
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--color-black);
+        position: relative;
+    }
+
+    .container > .content {
+        display: block;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .container > .content > p {
+        color: var(--color-white);
+
+    }
+
+    .container > .content a {
+        font-weight: 600;
+        color: var(--color-primary);
+        display: inline-block;
+        text-decoration: none;
+        box-shadow: 0px 0px 0px var(--color-primary);
+    }
+
+    .container > .content a:hover {
+        transition: box-shadow 200ms ease 0;
+        box-shadow: 0px 2px 0px var(--color-primary);
+    }
     </style>
 </head>
+
 <body>
-    <h2>
-        <a href="https://github.com/seyLu">github.com/seyLu</a>
-    </h2>
+    <main class="container">
+        <article class="content">
+            <p>Hi, I am seyLu. I build stuff.</p>
+            <p><a href="https://github.com/seyLu">github.com/seyLu</a></p>
+        </article>
+    </main>
 </body>
+
 </html>
